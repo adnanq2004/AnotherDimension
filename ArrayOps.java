@@ -21,11 +21,7 @@ public class ArrayOps {
 	public static int[] sumRows(int[][] matrix) {
                 int[] val = new int[matrix.length];
                 for (int row = 0; row < matrix.length;row++) {
-                        int temp = 0;
-                        for (int col = 0; col < matrix[row].length; col++) {
-                                temp += matrix[row][col];
-                        }
-                        val[row] = temp;
+                        val[row] = sum(matrix[row]);
                 }
                 return val;
         }
